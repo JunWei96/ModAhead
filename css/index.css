@@ -24,6 +24,18 @@
     text-transform: none;
 }
 
+.subtitle {
+    position: static;
+    max-width: none;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .huge-line-height {
     line-height: 80px;
 }
