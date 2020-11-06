@@ -4,6 +4,7 @@
         <title>ModAhead</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet" />
         <link href="css/index.css" rel="stylesheet">
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta content="utf-8" http-equiv="encoding">
@@ -13,12 +14,14 @@
             <h1 class="mt-5 text-primary huge-line-height text-center">ModAhead</h1>
             <p>
                 ModAhead is for <b>Computer Science students in National University of Singapore (NUS)</b> who want to plan their modules 
-                ahead of time. The current workflow require students to use a combination of Excel sheet, NUSMods, What-if Report and the NUS Computer Science course curriculum 
-                page in order to do so.     
+                ahead of time and towards graduation. The current workflow require students to use a combination of Excel sheet, NUSMods, 
+                What-if Report and the NUS Computer Science course curriculum page. As such, the process of planning towards graduation often
+                require students to switch between these tools, making the planning very tedious and error prone.
             </p>
             <p>
-                Through the design of <b>ModAhead</b>, we hope to improve the experience of students that are doing long term planning of their module schedules 
-                so that they can be rest assured that they are on track towards graduation. 
+                Through the design of <b>ModAhead</b>, we hope to improve the experience of CS students doing long term planning of their
+                modules by integrating the functionalities of the current tools used so that they can be rest assured that they 
+                are on track towards graduation. 
             </p>
 
             <div class="title text-primary-light">Project Overview</div>
@@ -57,10 +60,88 @@
         <div class="container">
             <div class="title text-primary-light">User Study</div>
             <div class="subtitle">User Identification</div>
+            <p>
+              The targeted user group for this project is chosen to be <b>Computer Science (CS) students from NUS</b>. This group of students 
+              are being selected due to the flexibility of scheduling. This flexibility arises from the fact that CS students in NUS can
+               choose from a total of 10 focus areas. This wide range of focus area means that there are a lot of ways for a student to plan 
+               and schedule their curriculum. Therefore, making it a good precursor towards a more general module planner.
+            </p>
+            <p>
+              By focusing on CS students in NUS, we aim to provide a personalized user experience that is representative of the academic
+               planning decisions a CS student would take in their course of study in NUS.
+            </p>
+
+            <div class="subtitle">Methodology of Study</div>
+            <p>
+              In order to gain insights on the different workflows and pain points that the students may have in scheduling, we decided to
+              conduct surveys and interviews. The online survey will serve as an efficient method to provide us with as many responses as 
+              possible. This is helpful as we need to find out how different students with different focus areas plan their modules and what 
+              are the considerations they usually take while doing so. Through the survey, we identified the interesting submissions and conducted 
+              online interview on them. The additional use of interviews can help fill the gaps that the questionnaires leave, since it is not
+              possible to get deep insight solely using questionnaires.
+            </p>
+            <p>
+              In total, we have collected 20 responses for the online survey. Among the 20 responses, 16 are Year-3 students while 4 are Year-4 students. 
+            </p>
+            <p>
+              For the interviews, there are a total of 5 online interviews conducted. Among the 5 interviewees, 4 are Year-3 students while 1 is Year-4 student.
+            </p>
+
+            <div class="subtitle">Insights</div>
+            <p>
+              Through the survey and interviews, we have come up with an overview of problems and tools that the students would usually use. 
+              In addition, we have also gained a better understanding of the planning habits of CS students in NUS.
+            </p>
+            <a href="img/user_insights.png" data-lightbox="user_insights" data-title="User Insights">
+              <img src="img/user_insights.png">
+            </a>
+
+            <div class="subtitle">Persona</div>
+            <p>
+              This persona created base on the surveys and interviews being conducted. It is a generic persona that will be helpful in creating 
+              ModAhead as it can help us uncover the common the pain points that CS students faces in NUS while planning for graduation.
+            </p>
+            <a href="img/persona.png" data-lightbox="persona" data-title="Persona">
+              <img src="img/persona.png">
+            </a>
+
+            <div class="subtitle">General Workflow</div>
+            <p>
+              For the identified persona, we came up with a workflow that students would usually take when it comes to module planning towards graduation. 
+              This workflow is separated into 3 phases which starts from “Gathering Data”, “Planning” and lastly “Checking and Validating”.
+            </p>
+            <p>
+              The general pain points are as follows:
+            </p>
+            <ol>
+              <li>There is no integrated tool for facilitate the 3 phases of the workflow.</li>
+              <li>Students constantly needing to switch between different phases and tools.</li>
+              <li>In an unfortunate event when the planned schedule is not possible, will be very tedious and frustrating to plan again.</li>
+            </ol> 
+            <a href="img/3_step_workflow.png" data-lightbox="workflow" data-title="Workflow">
+              <img src="img/3_step_workflow.png">
+            </a>
         </div>
 
         <div class="container">
+          <div>
             <div class="title text-primary-light">Initial Prototype</div>
+            <div class="subtitle">Initial Prototype 1</div>
+            <p>
+              The idea in which this prototype is built upon is based on allowing students to choose the modules that they want to take and place them on
+              the “Module Basket” first before adding them into the schedule. This step by step process will reduce the student’s cognitive load at each
+              stage as the student will only need to worry about 1 thing in each process. What the UI aim to achieve is that in the event when the desired 
+              module is deemed not fit for the schedulable, it is supposed to facilitate the changing of modules easily. With the above idea in mind, we came
+              up with the following prototype.
+            </p>
+            <p>
+              By clicking on the “What is left” button, a modal with the remaining module that the student needs to take will appear. The student then chooses
+              those modules that he or she is missing. These chosen modules will then be added into the “Module Basket” where the student will then schedule them.
+            </p>
+            <a href="img/initial_prototype_junwei_1.png" data-lightbox="initial_prototype_1" data-title="Initial Prototype 1">
+              <img src="img/initial_prototype_junwei_1.png">
+            </a>
+          </div>
         </div>
 
         <div class="container">
@@ -84,5 +165,6 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/fontawesome.js"></script>
+        <script src="js/lightbox.js"></script>
     </body>
 </html>

@@ -39,3 +39,15 @@
 .huge-line-height {
     line-height: 80px;
 }
+
+.centralized-img {
+    align-self: center;
+    padding-bottom: 40px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
