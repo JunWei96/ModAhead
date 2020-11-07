@@ -131,7 +131,7 @@
               The idea in which this prototype is built upon is based on allowing students to choose the modules that they want to take and place them on
               the “Module Basket” first before adding them into the schedule. This step by step process will reduce the student’s cognitive load at each
               stage as the student will only need to worry about 1 thing in each process. What the UI aim to achieve is that in the event when the desired 
-              module is deemed not fit for the schedulable, it is supposed to facilitate the changing of modules easily. With the above idea in mind, we came
+              module is deemed not fit for the schedule, it is supposed to facilitate the changing of modules easily. With the above idea in mind, we came
               up with the following prototype.
             </p>
             <p>
@@ -176,7 +176,7 @@
             </a>
             <div class="subtitle">Initial Prototype 4</div>
             <p>
-                This prototype was designed to allow student to plan modules for all semesters with error detection to help CS students ensure that they will be able to graduate by their targeted graduation year. This means that the graduation requirements must be readily available and there should be some error checking to ensure that the student is constantly informed about any scheduling issues. Being able to sync with NUS EduRec system will also be a great help as they do not need to manually enter a lot of information, especially for student in later years of candidature. Some of the features of the prototype includes:
+                This prototype was designed to allow student to plan modules for all semesters with error detection to help CS students ensure that they will be able to graduate by their targeted graduation year. This means that the graduation requirements must be readily available and there should be some error checking to ensure that the student is constantly informed about any scheduling issues. Being able to sync with NUS EduRec system will also be a great help as they do not need to manually enter a lot of information, especially for students in later years of candidature. Some of the features of the prototype includes:
             </p>
             <ul>
                 <li>Signing in to EduRec</li>
@@ -199,7 +199,7 @@
             </p>
             <div class="subtitle">Evaluation Plan</div>
             <p>
-               Firstly, we decided that we would want each of the peer reviewer review 2 prototype each. We then came up with an order as to how we want our prototypes to be presented to them. We wanted to ensure that each prototype has a chance to come before and after another, and as such, we assign a unique prototype to each of the 4 reviewers to be the first prototype. We did the same for the second prototype with the condition of no reviewer gets a repeat so each prototype gets 2 reviews by 2 different person.
+               Firstly, we decided that we would want each of the peer reviewer review 2 prototype each. We then came up with an order as to how we want our prototypes to be presented to them. We wanted to ensure that each prototype has a chance to come before and after another, and as such, we assign a unique prototype to each of the 4 reviewers to be the first prototype. We did the same for the second prototype with the condition of no reviewer gets a repeat so each prototype gets reviewed by 2 different person.
             </p>
             <p>
                Next, We created a document of instructions for the reviewers, as well as the feedback format. For the format of feedback, we use a combination of 2 things:
@@ -307,21 +307,35 @@
             <div class="title text-primary-light">User Test</div>
             <div class="subtitle">Evaluation Plan</div>
             <p>
-              Our User Testing involves a total of 5 participants that tested our Hi - Fi prototype individually over an online meeting. <br/>
-              The participants were asked to carry out tasks using the prototype that was presented to them. Whilst performing these tasks, they were encouraged to think aloud and voice out any opinions and thoughts that they had. <br/>
+              Our User Testing involves a total of 5 participants that tested our Hi - Fi prototype individually over an online meeting.
+            </p>
+            <p>
+              The participants were asked to carry out tasks using the prototype that was presented to them. Whilst performing these tasks, they were encouraged to think aloud and voice out any opinions and thoughts that they had. 
+            </p>
+            <p>
               After conducting the user testing, we had the participants answer a few questionaires regarding the prototype, as well as logged any interesting details that we could find while watching the recordings of the user testing.
             </p>
             <div class="subtitle">Findings</div>
             <p>
               Below is a list of points that our team came up with after discussing the logs and questionaires that we obtained through the user testing:
             </p>
+            <b>Adding a module</b>
             <ol>
               <li>The "+" icon that was intended for adding special terms in our schedule planner was often mistaken for adding modules to the schedule.</li>
               <li>The search function for finding modules was more often used for adding modules compared to the panel of modules that were presented to the user.</li>
+            </ol>
+            <b>Cloning a schedule</b>
+            <ol>
               <li>After cloning a schedule, users found it hard to differentiate between the schedules that they have created.</li>
-              <li>The error descriptions that surfaced when hovering above certain modules were not informative enough.</li>
-              <li>Users found that the functionality of cloning schedules being accessible from a settings icon was not very intuitive.</li>
               <li>There was no visible system status that indicated a successful cloning of schedules.</li>
+              <li>Users found that the functionality of cloning schedules being accessible from a settings icon was not very intuitive.</li>
+            </ol>
+            <b>Resolving module prerequisite error</b>
+            <ol>
+              <li>The error descriptions that surfaced when hovering above certain modules were not informative enough.</li>
+            </ol>
+            <b>General feedback</b>
+            <ol>
               <li>Users found it hard to tell what portion of the main page represented a "Schedule".</li>
             </ol> 
             <div class="subtitle">Improvements to Hi - Fi Prototype</div>
@@ -336,6 +350,7 @@
             Based on the user review, we implemented several key changes:
             </p>
             <ul>
+                <li>We have added text beside the "+" icon so that users can immediately know about its functionality.</li>
                 <li>Error descriptions have been changed to more accurately describe the error.</li>
                 <li>The <b>Clone</b> function has been renamed to a <b>Duplicate</b> function to make it sound less intimidating.</li>
                 <li>The <b>Duplicate</b> function can now be found when the user selects <b>View All Schedules</b>.</li>
